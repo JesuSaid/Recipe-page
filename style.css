@@ -6,9 +6,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: 4rem;
+    font-size: 1rem; /* 16px */
+    line-height: 1.5; 
+    padding: 4rem; /* 16px * 4*/
 }
 
 * {
@@ -18,13 +18,66 @@ body {
 .recipe {
     background-color: #FFF;
     border-radius: 15px;
-    padding: 1.5rem;
+    padding: 1.5rem; /* 16px * 1.5*/
     width: 100%;
-    max-width: 45rem;
+    max-width: 45rem; /* 16px * 45*/
 }
 
 .recipe__image {
     display: block;
     width: 100%;
     border-radius: 8px;
+}
+
+.recipe__title {
+    margin: 1.5rem 0 1rem; /* 16px*1.5    0    16px*/
+    font-family: "Young Serif", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #302D2C;
+}
+
+.recipe__section-title {
+    margin: 1rem 0; /* 16px 0px*/
+    font-family: "Young Serif", serif;
+    color: #854632;
+    font-size: 1.75rem; /* 16px * 1.75*/
+    font-weight: 400;
+}
+
+.recipe :is(p, ul, ol) {
+    margin: 0;
+}
+
+.recipe :is(p, ul, ol, tr) {
+    color: #5F574E;
+}
+
+.recipe__section--preparation {
+    margin: 2rem 0 0; /* 16px*2   0   0*/
+    background-color: #FFF5FA;
+    padding: 2rem; /* 16px * 2*/
+    border-radius: 10px;
+}
+
+.recipe__section--preparation > .recipe__section-title {
+    margin: 0;
+    font-family: Outfit, sans-serif;
+    color: #7B284F;
+    font-size: 1.25rem; /* 16px * 1.25*/
+    font-weight: 600;
+}
+
+.recipe :is(ol, ul) {
+    padding-left: 1.5rem; /* 16px * 1.5*/
+    list-style-position: outside;
+}
+
+.recipe :is(ul li, ol li) {
+    line-height: 2;
+    padding-left: 0.625rem; /*10px*/
+}
+
+.recipe li::marker {
+    color: #854632;
 }
