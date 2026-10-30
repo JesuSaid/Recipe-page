@@ -91,3 +91,28 @@ body {
 .recipe__section:last-child {
     border-bottom: none;
 }
+
+.recipe__section > table {
+    width: 100%;
+    text-align: left;
+    line-height: 2;
+    border-collapse: collapse;
+}
+
+.recipe__section > table :is(th, td) {
+    border-top: 1px solid #E4DED8;
+    padding: 0.5rem 2.5rem;
+}
+
+.recipe__section > table th {
+    font-weight: 400;
+}
+
+.recipe__section > table td {
+    color: #854632;
+    font-weight: 700;
+}
+
+.recipe__section > table tr:first-child :is(th, td){
+    border-top: none;
+}
