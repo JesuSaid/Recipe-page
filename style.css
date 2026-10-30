@@ -67,12 +67,13 @@ body {
 }
 
 .recipe :is(ul li, ol li) {
-    line-height: 2;
+    line-height: 1.5;
     padding-left: 1rem; /*16px separacion de la viñeta y el texto*/ 
 }
 
 .recipe li::marker {
     color: #854632;
+    font-weight: 700;
 }
 
 .recipe__section {
@@ -95,7 +96,6 @@ body {
 .recipe__section > table {
     width: 100%;
     text-align: left;
-    line-height: 2;
     border-collapse: collapse;
 }
 
@@ -115,4 +115,46 @@ body {
 
 .recipe__section > table tr:first-child :is(th, td){
     border-top: none;
+}
+
+@media screen and (max-width: 37.5rem) {
+    body{
+        padding: 0;
+        background-color: #FFF;
+    }
+
+    .recipe {
+        background-color: #FFF;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .recipe__image {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .recipe__title {
+        padding: 1.5rem 2rem 0;
+        line-height: 1;
+        font-size: 2rem;
+    }
+
+    .recipe > p {
+        padding: 0.5rem 2rem;
+    }
+
+    .recipe__section {
+        margin-inline: 2rem;
+        padding: 1.5rem 0;
+    }
+
+    .recipe__section--preparation {
+        margin: 1rem 2rem 0;
+        padding: 1.5rem;
+    }
+
+    .recipe__section > table :is(th, td) {
+        padding: 1rem 2rem;
+    }
 }
