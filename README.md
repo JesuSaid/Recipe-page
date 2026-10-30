@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Repository: [github.com/JesuSaid/Recipe-page](https://github.com/JesuSaid/Recipe-page)
-- Live site: To be added after deployment. [jesusaid.github.io/Recipe-page/](https://jesusaid.github.io/Recipe-page/)
+- Live site: [jesusaid.github.io/Recipe-page/](https://jesusaid.github.io/Recipe-page/)
 
 ## My process
 
